@@ -17,7 +17,7 @@ df["label"] = df["label"].astype(int)
 
 
 
-# 2. BALANCE DATASET (IMPORTANT FIX)
+# 2. BALANCE DATASET
 
 df = shuffle(df).reset_index(drop=True)
 
@@ -118,3 +118,4 @@ pickle.dump(explain_dict, open("explain_words.pkl", "wb"))
 
 
 print("Explainability saved.")
+
